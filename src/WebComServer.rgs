@@ -1,0 +1,11 @@
+HKCR
+{
+	NoRemove AppID
+	{
+		{472EE2A4-56A3-11D4-804B-E290105D5E14} = s 'WebComServer'
+		'WebComServer.EXE'
+		{
+			val AppID = s {472EE2A4-56A3-11D4-804B-E290105D5E14}
+		}
+	}
+}

@@ -1,0 +1,230 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "winres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""winres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "1 TYPELIB ""WebComServer.tlb""\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904B0"
+        BEGIN
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "WebComServer Module\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "WebComServer\0"
+            VALUE "LegalCopyright", "Copyright 2000\0"
+            VALUE "OriginalFilename", "WebComServer.EXE\0"
+            VALUE "ProductName", "WebComServer Module\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+            VALUE "OLESelfRegister", "\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// REGISTRY
+//
+
+IDR_WebComServer        REGISTRY MOVEABLE PURE  "WebComServer.rgs"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUT DIALOG DISCARDABLE  0, 0, 222, 107
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Desktop Server"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "Thank you for using Vladimir Novick Desktop Server .",
+                    IDC_STATIC,17,7,170,14
+    CTEXT           "Desktop Server  is implemented in 32-bit Windows API, and it is designed for Windows 95, Windows 98, Windows NT Workstation , Server 4.0 and Windows 2000 (on Intel or compatible microprocessors).",
+                    IDC_STATIC,7,22,199,34
+    LTEXT           "(c) Vladimir Novick  20.01.2001",IDC_STATIC,76,67,124,
+                    10
+    LTEXT           "v_novick@yahoo.com",IDC_STATIC,116,82,90,11
+    ICON            IDI_COMSERVER,IDC_STATIC,27,68,21,20
+    GROUPBOX        "",IDC_STATIC,7,56,208,44
+END
+
+IDD_CMONITORING DIALOG DISCARDABLE  0, 0, 295, 54
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Properties Desktop Server"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "Exit",1,223,34,58,14
+    LTEXT           "Wait",IDC_STATIC,45,30,24,9
+    LTEXT           "minutes",IDC_STATIC,121,31,32,9
+    LTEXT           "Screen wallpapers:",IDC_STATIC,7,9,62,11
+    EDITTEXT        IDC_EDIT_WALLPAPER_DIR,78,6,202,14,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    EDITTEXT        IDC_COMBO_WAIT,77,27,36,14,ES_AUTOHSCROLL
+    ICON            IDI_ICONSERVER,IDC_STATIC,7,25,23,21,SS_SUNKEN
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 215
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 100
+    END
+
+    IDD_CMONITORING, DIALOG
+    BEGIN
+        RIGHTMARGIN, 292
+        BOTTOMMARGIN, 50
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_RBUTTON MENU DISCARDABLE 
+BEGIN
+    POPUP "IDR_RBUTTON"
+    BEGIN
+        MENUITEM "Properties",                  ID_IDRRBUTTON_PROPERTIES
+        MENUITEM SEPARATOR
+        MENUITEM "Online Support",              ID_IDRRBUTTON_ONLINEHELP
+        MENUITEM "About",                       ID_ABOUT
+        MENUITEM SEPARATOR
+        MENUITEM "Exit",                        ID_EXIT
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_COMSERVER           ICON    DISCARDABLE     "Image\\Atom4.ico"
+IDI_ICONSERVER          ICON    DISCARDABLE     "image\\icon1.ico"
+IDI_ICONSERVER_TOOLS_WINDOW ICON    DISCARDABLE     "image\\icontools.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_ITEMDEFAULT         BITMAP  DISCARDABLE     "image\\bitmap1.bmp"
+IDB_ITEMDEFAULT_N       BITMAP  DISCARDABLE     "image\\bmp00001.bmp"
+IDB_SELECTED            BITMAP  DISCARDABLE     "image\\selected.bmp"
+IDB_SELECTING           BITMAP  DISCARDABLE     "image\\selectin.bmp"
+IDB_CLOSE               BITMAP  DISCARDABLE     "image\\close.bmp"
+IDB_ABOUT               BITMAP  DISCARDABLE     "image\\bmp00002.bmp"
+IDB_INTERNET            BITMAP  DISCARDABLE     "image\\bmp00003.bmp"
+IDB_PROPERTIES          BITMAP  DISCARDABLE     "image\\properti.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_PROJNAME            "WebComServer"
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+1 TYPELIB "WebComServer.tlb"
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

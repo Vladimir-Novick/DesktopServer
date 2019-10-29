@@ -1,0 +1,20 @@
+// WebComServer.idl : IDL source for WebComServer.dll
+//
+
+// This file will be processed by the MIDL tool to
+// produce the type library (WebComServer.tlb) and marshalling code.
+
+import "oaidl.idl";
+import "ocidl.idl";
+
+[
+	uuid(472EE2A3-56A3-11D4-804B-E290105D5E14),
+	version(1.0),
+	helpstring("WebComServer 1.0 Type Library")
+]
+library WEBCOMSERVERLib
+{
+	importlib("stdole32.tlb");
+	importlib("stdole2.tlb");
+
+};
